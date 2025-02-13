@@ -1,0 +1,17 @@
+{
+  "branches": [
+    {
+      "name": "main",
+      "channel": "dev"
+    },
+    {
+      "name": "Release-+([0-9])?(.+([0-9]))",
+      "channel":"release"
+    }
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/github"
+  ]
+}
