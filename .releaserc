@@ -1,14 +1,17 @@
 {
   "branches": [
-    "main",
     {
-      "name": "release/v\\d+.\\d+",
+      "name": "main",
+      "prerelease": true
+    },
+    {
+      "name": "release/v+([0-9])?(.{+([0-9]),x}).x",
       "prerelease": false
     }
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/github"
+    "@semantic-release/git"
   ]
 }
