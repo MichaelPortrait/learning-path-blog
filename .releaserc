@@ -1,10 +1,15 @@
 {
   "branches": [
-    "main",
     {
-      "name": "release/v\\d+.\\d+",
+      "name": "release/**",
+     "range": "${name.replace(/^release\\//, '')}.x",
       "prerelease": false
+    },
+    {
+      "name": "main",
+      "prerelease": true
     }
+
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
