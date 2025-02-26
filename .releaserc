@@ -2,7 +2,7 @@
   "branches": [
     {
       "name": "release/**",
-      "range": "${name.replace(/^release\\/v/, '')}.X",
+      "range": "1.x.x",
       "prerelease": false
     },
     {
